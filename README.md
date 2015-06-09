@@ -503,3 +503,9 @@ Expressjs下可以写的很规范，可以有做大应用，可以有很好的�
     moag user name:string password:string
 
 这就是我目前在写的一个开源项目，待可用的时候会公开的，敬请期待
+
+
+
+欢迎关注我的公众号【node全栈】
+
+![node全栈.png](doc/2.png)

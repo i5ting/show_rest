@@ -1,0 +1,29 @@
+{
+  "name": "show_rest",
+  "version": "1.0.0",
+  "description": "## 准备",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5ting/show_rest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i5ting/show_rest/issues"
+  },
+  "devDependencies": {
+      "gulp": "^3.8.10",
+      "gulp-gh-pages": "^0.4.0",
+      "gulp-open": "^0.3.1",
+      "gulp-rename": "^1.2.0",
+      "shelljs": "^0.3.0"
+  },
+  "homepage": "https://github.com/i5ting/show_rest#readme"
+}
