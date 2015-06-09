@@ -1,0 +1,673 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>Show Rest</h1>
+
+<h2>准备</h2>
+
+<p>如果你不了解http协议，先看一下https://github.com/i5ting/node-http</p>
+
+<h2>什么是REST？</h2>
+
+<p>RESTful架构，就是目前最流行的一种互联网软件架构。它结构清晰、符合标准、易于理解、扩展方便，所以正得到越来越多网站的采用。</p>
+
+<p>以下内容摘自阮一峰的文章：</p>
+
+<p>一、起源</p>
+
+<p>REST这个词，是Roy Thomas Fielding在他2000年的博士论文中提出的。</p>
+
+<p>二、名称</p>
+
+<p>Fielding将他对互联网软件的架构原则，定名为REST，即Representational State Transfer的缩写。我对这个词组的翻译是&quot;表现层状态转化&quot;。
+如果一个架构符合REST原则，就称它为RESTful架构。</p>
+
+<p>三、资源（Resources）</p>
+
+<p>REST的名称&quot;表现层状态转化&quot;中，省略了主语。&quot;表现层&quot;其实指的是&quot;资源&quot;（Resources）的&quot;表现层&quot;。</p>
+
+<p>四、表现层（Representation）</p>
+
+<p>&quot;资源&quot;是一种信息实体，它可以有多种外在表现形式。我们把&quot;资源&quot;具体呈现出来的形式，叫做它的&quot;表现层&quot;（Representation）。</p>
+
+<p>五、状态转化（State Transfer）</p>
+
+<p>访问一个网站，就代表了客户端和服务器的一个互动过程。在这个过程中，势必涉及到数据和状态的变化。</p>
+
+<p>六、综述</p>
+
+<p>综合上面的解释，我们总结一下什么是RESTful架构：</p>
+
+<p>（1）每一个URI代表一种资源；
+（2）客户端和服务器之间，传递这种资源的某种表现层；
+（3）客户端通过四个HTTP动词，对服务器端资源进行操作，实现&quot;表现层状态转化&quot;。</p>
+
+<p><strong>说的通俗一点，改变url写法，让它带有状态，即语义化</strong></p>
+
+<p>更多详见：</p>
+
+<ul>
+<li>http://www.ruanyifeng.com/blog/2011/09/restful.html</li>
+<li>http://www.restapitutorial.com/lessons/whatisrest.html</li>
+</ul>
+
+<h2>请求方法</h2>
+
+<p>一般会严格要求请求方法及其释义，下面给出常用的请求方法</p>
+
+<ul>
+<li>如果请求头中存在 <code>X-HTTP-Method-Override</code> 或参数中存在 <code>_method</code>（拥有更高权重），且值为 <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, <code>PATCH</code>, <code>OPTION</code>, <code>HEAD</code> 之一，则视作相应的请求方式进行处理</li>
+<li><code>GET</code>, <code>DELETE</code>, <code>HEAD</code> 方法，参数风格为标准的 <code>GET</code> 风格的参数，如 <code>url?a=1&amp;b=2</code></li>
+<li><code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>OPTION</code> 方法
+
+<ul>
+<li>默认情况下请求实体会被视作标准 json 字符串进行处理，当然，依旧推荐设置头信息的 <code>Content-Type</code> 为 <code>application/json</code></li>
+<li>在一些特殊接口中（会在文档中说明），可能允许 <code>Content-Type</code> 为 <code>application/x-www-form-urlencoded</code> 或者 <code>multipart/form-data</code> ，此时请求实体会被视作标准 <code>POST</code> 风格的参数进行处理</li>
+</ul></li>
+</ul>
+
+<p>关于方法语义的说明：</p>
+
+<ul>
+<li><code>OPTIONS</code> 用于获取资源支持的所有 HTTP 方法</li>
+<li><code>HEAD</code> 用于只获取请求某个资源返回的头信息</li>
+<li><code>GET</code> 用于从服务器获取某个资源的信息
+
+<ul>
+<li>完成请求后返回状态码 <code>200 OK</code></li>
+<li>完成请求后需要返回被请求的资源详细信息</li>
+</ul></li>
+<li><code>POST</code> 用于创建新资源
+
+<ul>
+<li>创建完成后返回状态码 <code>201 Created</code></li>
+<li>完成请求后需要返回被创建的资源详细信息</li>
+</ul></li>
+<li><code>PUT</code> 用于完整的替换资源或者创建指定身份的资源，比如创建 id 为 123 的某个资源
+
+<ul>
+<li>如果是创建了资源，则返回 <code>201 Created</code></li>
+<li>如果是替换了资源，则返回 <code>200 OK</code></li>
+<li>完成请求后需要返回被修改的资源详细信息</li>
+</ul></li>
+<li><code>PATCH</code> 用于局部更新资源
+
+<ul>
+<li>完成请求后返回状态码 <code>200 OK</code></li>
+<li>完成请求后需要返回被修改的资源详细信息</li>
+</ul></li>
+<li><code>DELETE</code> 用于删除某个资源
+
+<ul>
+<li>完成请求后返回状态码 <code>204 No Content</code></li>
+</ul></li>
+</ul>
+
+<p>上面是比较常见的，估计大部分人最常用的是2个，get和post，具体每个怎么玩，下面会给出实例</p>
+
+<h2>最常见的增删改查</h2>
+
+<p>以前大家都认为管理信息系统就是crud，认为没有啥技术含量，哎，真正能把crud写明白其实也不是一件容易的事儿</p>
+
+<p>七个路由，见<code>app/routes/users.js</code></p>
+
+<p>其中4个路由是crud</p>
+
+<ul>
+<li> GET    /users[/]        =&gt; user.list()</li>
+<li> POST   /users[/]        =&gt; user.create()</li>
+<li> PATCH  /users/:id       =&gt; user.update()</li>
+<li> DELETE /users/:id       =&gt; user.destroy()</li>
+</ul>
+
+<p>另外3个是页面渲染用的</p>
+
+<ul>
+<li> GET    /users/new       =&gt; user.new()</li>
+<li> GET    /users/:id       =&gt; user.show()</li>
+<li> GET    /users/:id/edit  =&gt; user.edit()</li>
+</ul>
+
+<p>那么我们先来看一下crud对应的请求方法</p>
+
+<ul>
+<li>get用于请求列表</li>
+<li>post用于创建</li>
+<li>patch用于更新，局部更新资源</li>
+<li>delete用于删除</li>
+</ul>
+
+<p>对比上一节的内容，你会发现他们的含义貌似真的对了，唯一可能有争议是更新，有的人用put有的用patch，推荐patch</p>
+
+<p>以前做java的时候会认为，创建、删除和更新都用post，查询和搜索用get，这样做没问题，只是不符合rest风格而已。</p>
+
+<p>很多人和我讨论过到该不该rest，我的回答是</p>
+
+<ul>
+<li><a href="https://cnodejs.org/topic/552b3b9382388cec50cf6d95">客户端 API 开发总结</a></li>
+</ul>
+
+<h2>express代码分层</h2>
+
+<p>默认的express生成器生成的只有routes和views文件夹，相对比较简单，做大型应用怎么能少了mvc呢？</p>
+
+<p>于是我仿照rails写了如下代码分层</p>
+
+<ul>
+<li>routes 路由层，只有url和中间件，不包含任何逻辑</li>
+<li>controllers 业务逻辑控制层</li>
+<li>models  模型层</li>
+<li>views  视图层</li>
+</ul>
+
+<p>如下图</p>
+
+<p><img src="doc/1.png" alt=""></p>
+
+<h2>路由层</h2>
+
+<p>上代码</p>
+<div class="highlight"><pre><span class="n">var</span> <span class="n">express</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="c">&#39;express&#39;);</span>
+<span class="n">var</span> <span class="n">router</span> <span class="o">=</span> <span class="n">express</span><span class="p">.</span><span class="n">Router</span><span class="p">()</span><span class="err">;</span>
+
+<span class="n">var</span> <span class="err">$</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="c">&#39;../controllers/users_controller&#39;);</span>
+
+
+<span class="o">//</span> <span class="o">--</span> <span class="n">custom</span>
+
+
+<span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Auto</span> <span class="n">generate</span> <span class="n">RESTful</span> <span class="n">url</span> <span class="n">routes</span><span class="p">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="n">URL</span> <span class="n">routes</span><span class="p">:</span>
+ <span class="o">*</span>
+ <span class="o">*</span>  <span class="k">GET</span>    <span class="o">/</span><span class="n">users</span><span class="err">[</span><span class="o">/</span><span class="err">]</span>        <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">list</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="k">GET</span>    <span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="k">new</span>       <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="k">GET</span>    <span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="p">:</span><span class="n">id</span>       <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="k">GET</span>    <span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="p">:</span><span class="n">id</span><span class="o">/</span><span class="n">edit</span>  <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">edit</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="n">POST</span>   <span class="o">/</span><span class="n">users</span><span class="err">[</span><span class="o">/</span><span class="err">]</span>        <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">create</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="n">PATCH</span>  <span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="p">:</span><span class="n">id</span>       <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">update</span><span class="p">()</span>
+ <span class="o">*</span>  <span class="n">DELETE</span> <span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="p">:</span><span class="n">id</span>       <span class="o">=&gt;</span> <span class="n">user</span><span class="p">.</span><span class="n">destroy</span><span class="p">()</span>
+ <span class="o">*</span>
+ <span class="o">*/</span>
+
+<span class="n">router</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="c">&#39;/new&#39;, $.new);  </span>
+<span class="n">router</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="c">&#39;/:id/edit&#39;, $.edit);</span>
+
+<span class="n">router</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="c">&#39;/&#39;)</span>
+  <span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="err">$</span><span class="p">.</span><span class="n">list</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="err">$</span><span class="p">.</span><span class="n">create</span><span class="p">)</span><span class="err">;</span>
+
+<span class="n">router</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="c">&#39;/:id&#39;)</span>
+  <span class="p">.</span><span class="n">patch</span><span class="p">(</span><span class="err">$</span><span class="p">.</span><span class="n">update</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="err">$</span><span class="p">.</span><span class="n">show</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="err">$</span><span class="p">.</span><span class="n">destroy</span><span class="p">)</span><span class="err">;</span>
+
+
+<span class="n">module</span><span class="p">.</span><span class="n">exports</span> <span class="o">=</span> <span class="n">router</span><span class="err">;</span>
+</pre></div>
+<p>和普通的路由代码一样，稍微改造了一下，统一了地址，应该是更清晰了。</p>
+
+<p>这里只是引入了<code>users_controller</code>文件，完成请求地址和业务处理代码的映射而已。</p>
+
+<p>这里还要讨论一个问题，每次增加一个接口就要加一个路由会比较烦，而且要在app.js里配置，能不能自动加载呢？比如app/routes目录下的所有js都可以挂载到app上</p>
+
+<p>答案是可以的，使用我写的<code>mount-routes</code>即可，示例如下：</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">express</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;express&#39;)</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">express</span><span class="p">()</span>
+
+<span class="vg">var</span><span class="w"> </span><span class="vg">mount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;mount-routes&#39;);</span>
+
+<span class="o">//</span><span class="w"> </span><span class="err">简单用法，加载</span><span class="vg">app</span><span class="o">/</span><span class="vg">routes</span><span class="err">下的所有路由</span>
+<span class="o">//</span><span class="w"> </span><span class="vg">mount</span><span class="p">(</span><span class="vg">app</span><span class="p">);</span>
+
+<span class="o">//</span><span class="w"> </span><span class="err">带路径的用法，加载</span><span class="vg">routes2</span><span class="err">目录下的所有路由</span>
+<span class="o">//</span><span class="w"> </span><span class="vg">mount</span><span class="p">(</span><span class="vg">app</span><span class="p">,</span><span class="w"> </span><span class="c1">&#39;routes2&#39;);</span>
+
+<span class="o">//</span><span class="w"> </span><span class="err">带路径的用法并且可以打印出路有表</span>
+<span class="vg">mount</span><span class="p">(</span><span class="vg">app</span><span class="p">,</span><span class="w"> </span><span class="c1">&#39;routes2&#39;, true);</span>
+
+<span class="o">//</span><span class="w"> </span><span class="vg">start</span><span class="w"> </span><span class="vg">server</span>
+<span class="vg">app</span><span class="o">.</span><span class="vg">listen</span><span class="p">(</span><span class="il">23018</span><span class="p">)</span>
+</pre></div>
+<p>更多内容见</p>
+
+<p><a href="https://cnodejs.org/topic/556bd8ecf6ec9c0f020377c2">mount-routes</a></p>
+
+<h2>控制层</h2>
+<div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * Created by sang on 01/06/14.</span>
+<span class="cm"> */</span>
+
+<span class="k">var</span> <span class="n">User</span> <span class="o">=</span> <span class="n">require</span><span class="p">(&#39;..</span><span class="o">/</span><span class="n">models</span><span class="o">/</span><span class="n">user</span><span class="p">&#39;);</span>
+</pre></div>
+<p>首先，控制层是控制业务处理的，所以它和模型层打交道比较多，同时控制视图如何展示</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users =&gt; list, query: &#39; + JSON.stringify(req.query));</span>
+<span class="w">  </span><span class="vg">User</span><span class="o">.</span><span class="vg">getAll</span><span class="p">(</span><span class="vg">function</span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">users</span><span class="p">){</span>
+<span class="w">    </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">users</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">res</span><span class="o">.</span><span class="vg">render</span><span class="p">(</span><span class="c1">&#39;users/index&#39;, {</span>
+<span class="w">      </span><span class="vg">users</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">users</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>请求所有列表，很简单，获取所有用户即可</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">new</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users/new =&gt; new, query: &#39; + JSON.stringify(req.query));</span>
+
+<span class="w">  </span><span class="vg">res</span><span class="o">.</span><span class="vg">render</span><span class="p">(</span><span class="c1">&#39;users/new&#39;, {</span>
+<span class="w">    </span><span class="vg">user</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;_action&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="p">};</span>
+</pre></div>
+<p>新建用户，实际是render视图而已，没有啥逻辑，user参数是为了我生成代码方便用的，无他</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">show</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users/:id =&gt; show, query: &#39; + JSON.stringify(req.query) + </span>
+<span class="w">    </span><span class="c1">&#39;, params: &#39; + JSON.stringify(req.params));</span>
+<span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">params</span><span class="o">.</span><span class="vg">id</span><span class="p">;</span>
+
+<span class="w">  </span><span class="vg">User</span><span class="o">.</span><span class="vg">getById</span><span class="p">(</span><span class="vg">id</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">user</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">res</span><span class="o">.</span><span class="vg">render</span><span class="p">(</span><span class="c1">&#39;users/show&#39;, {</span>
+<span class="w">      </span><span class="vg">user</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">user</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>同new，是render视图代码</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">edit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users/:id/edit =&gt; edit, query: &#39; + JSON.stringify(req.query) + </span>
+<span class="w">    </span><span class="c1">&#39;, params: &#39; + JSON.stringify(req.params));</span>
+
+<span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">params</span><span class="o">.</span><span class="vg">id</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">  </span><span class="vg">User</span><span class="o">.</span><span class="vg">getById</span><span class="p">(</span><span class="vg">id</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">user</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">user</span><span class="o">.</span><span class="vg">_action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="c1">&#39;edit&#39;;</span>
+
+<span class="w">    </span><span class="vg">res</span><span class="o">.</span><span class="vg">render</span><span class="p">(</span><span class="c1">&#39;users/edit&#39;, {</span>
+<span class="w">      </span><span class="vg">user</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">user</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>同new，是render视图代码</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">create</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users =&gt; create, query: &#39; + JSON.stringify(req.query) + </span>
+<span class="w">    </span><span class="c1">&#39;, params: &#39; + JSON.stringify(req.params) + &#39;, body: &#39; + JSON.stringify(req.body));</span>
+
+<span class="w">    </span><span class="vg">User</span><span class="o">.</span><span class="vg">create</span><span class="p">({</span><span class="nl">name:</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">name</span><span class="p">,</span><span class="nl">password:</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">password</span><span class="p">},</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">user</span><span class="p">);</span>
+<span class="w">      </span><span class="vg">res</span><span class="o">.</span><span class="vg">render</span><span class="p">(</span><span class="c1">&#39;users/show&#39;, {</span>
+<span class="w">        </span><span class="vg">user</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="vg">user</span>
+<span class="w">      </span><span class="p">})</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>这段是创建用户的代码，根据post参数，保存入库，跳转到展示详情页面</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">update</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users/:id =&gt; update, query: &#39; + JSON.stringify(req.query) + </span>
+<span class="w">    </span><span class="c1">&#39;, params: &#39; + JSON.stringify(req.params) + &#39;, body: &#39; + JSON.stringify(req.body));</span>
+
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">params</span><span class="o">.</span><span class="vg">id</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="vg">User</span><span class="o">.</span><span class="vg">updateById</span><span class="p">(</span><span class="vg">id</span><span class="p">,{</span><span class="nl">name:</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">name</span><span class="p">,</span><span class="nl">password:</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">password</span><span class="p">},</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">user</span><span class="p">);</span>
+
+<span class="w">      </span><span class="vg">res</span><span class="o">.</span><span class="vg">json</span><span class="p">({</span>
+<span class="w">        </span><span class="nl">data:</span><span class="p">{</span>
+<span class="w">          </span><span class="vg">redirect</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;/users/&#39; + id</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nl">status:</span><span class="p">{</span>
+<span class="w">          </span><span class="vg">code</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="il">0</span><span class="p">,</span>
+<span class="w">          </span><span class="vg">msg</span><span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;delete success!&#39;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">});</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>和创建类似，它是根据id来更新内容</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">destroy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">req</span><span class="o">.</span><span class="vg">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">&#39; /users/:id =&gt; destroy, query: &#39; + JSON.stringify(req.query) + </span>
+<span class="w">    </span><span class="c1">&#39;, params: &#39; + JSON.stringify(req.params) + &#39;, body: &#39; + JSON.stringify(req.body));</span>
+
+<span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">params</span><span class="o">.</span><span class="vg">id</span><span class="p">;</span>
+<span class="w">  </span><span class="vg">User</span><span class="o">.</span><span class="vg">deleteById</span><span class="p">(</span><span class="vg">id</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="vg">err</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">res</span><span class="o">.</span><span class="vg">json</span><span class="p">({</span>
+<span class="w">      </span><span class="nl">data:</span><span class="p">{},</span>
+<span class="w">      </span><span class="nl">status:</span><span class="p">{</span>
+<span class="w">        </span><span class="vg">code</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="il">0</span><span class="p">,</span>
+<span class="w">        </span><span class="vg">msg</span><span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;delete success!&#39;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>和创建类似，它是根据id来删除内容</p>
+
+<p>以上代码形式都是一样的</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">xxxx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+<p>他实际上connect中间件的标准写法，如果你熟悉express，可以非常简单的上手，看了这些代码，你一定很好奇，User模型是怎么工作的，而且mongoose里并没有这些方法啊，下面会详细说明</p>
+
+<h2>模型层</h2>
+
+<p>我们的模型层使用的是比较传统的mongoose，如果需要promise库，可以搭配bluebird</p>
+<div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * Created by alfred on 01/06/14.</span>
+<span class="cm"> */</span>
+
+<span class="k">var</span> <span class="n">mongoose</span>    <span class="o">=</span> <span class="n">require</span><span class="p">(&#39;</span><span class="n">mongoose</span><span class="p">&#39;);</span>
+<span class="k">var</span> <span class="n">Schema</span>      <span class="o">=</span> <span class="n">mongoose</span><span class="p">.</span><span class="n">Schema</span><span class="p">;</span>
+<span class="k">var</span> <span class="n">MongooseDao</span> <span class="o">=</span> <span class="n">require</span><span class="p">(&#39;</span><span class="n">mongoosedao</span><span class="p">&#39;);</span>
+
+<span class="k">var</span> <span class="n">userSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Schema</span><span class="p">(</span>
+    <span class="p">{</span><span class="s">&quot;name&quot;</span><span class="o">:</span><span class="s">&quot;String&quot;</span><span class="p">,</span><span class="s">&quot;password&quot;</span><span class="o">:</span><span class="s">&quot;String&quot;</span><span class="p">}</span>
+<span class="p">);</span>
+
+<span class="k">var</span> <span class="n">User</span> <span class="o">=</span> <span class="n">mongoose</span><span class="p">.</span><span class="n">model</span><span class="p">(&#39;</span><span class="n">User</span><span class="p">&#39;,</span> <span class="n">userSchema</span><span class="p">);</span>
+<span class="k">var</span> <span class="n">UserDao</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MongooseDao</span><span class="p">(</span><span class="n">User</span><span class="p">);</span>
+
+<span class="k">module</span><span class="p">.</span><span class="n">exports</span> <span class="o">=</span> <span class="n">UserDao</span><span class="p">;</span>
+</pre></div>
+<p>这实际是最简单的定义mongoose模型的方法，我们唯一做的改进是增加了MongooseDao</p>
+
+<p>DAO是java的概念，是data access object，即数据访问对象，就是传说的crud方法</p>
+
+<p>你只要知道模型就好，为啥每个crud都要写呢？那得多烦啊</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">UserDao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">new</span><span class="w"> </span><span class="vg">MongooseDao</span><span class="p">(</span><span class="vg">User</span><span class="p">);</span>
+</pre></div>
+<p>这样就可以给user增加了基本的crud方法</p>
+
+<p>所以在controller里我们看到了如下代码</p>
+
+<ul>
+<li>User.getAll(function(err, users){</li>
+<li>User.getById(id, function(err, user) {</li>
+<li>User.create({name: req.body.name,password: req.body.password}, function (err, user) {</li>
+<li>User.updateById(id,{name: req.body.name,password: req.body.password}, function (err, user) {</li>
+<li>User.deleteById(id, function (err) {</li>
+</ul>
+
+<p>这5个方法，完美的完成crud的所有操作，是不是很爽？至少少写了很多代码</p>
+
+<p>而且当你想扩展的时候，你可以使用<code>User.model</code>来操作mongoose对象</p>
+
+<p>比如login，我需要在User模型增加is_exist方法</p>
+<div class="highlight"><pre><span class="n">var</span> <span class="n">mongoose</span>    <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="c">&#39;mongoose&#39;);</span>
+<span class="n">var</span> <span class="n">Schema</span>      <span class="o">=</span> <span class="n">mongoose</span><span class="p">.</span><span class="n">Schema</span><span class="err">;</span>
+<span class="n">var</span> <span class="n">MongooseDao</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="c">&#39;mongoosedao&#39;);</span>
+
+<span class="n">var</span> <span class="n">userSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Schema</span><span class="p">(</span>
+    <span class="p">{</span><span class="s">&quot;name&quot;</span><span class="p">:</span><span class="s">&quot;String&quot;</span><span class="p">,</span><span class="s">&quot;password&quot;</span><span class="p">:</span><span class="s">&quot;String&quot;</span><span class="p">}</span>
+<span class="p">)</span><span class="err">;</span>
+
+<span class="n">userSchema</span><span class="p">.</span><span class="n">methods</span><span class="p">.</span><span class="n">is_exist</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">var</span> <span class="n">query</span><span class="err">;</span>
+  <span class="n">query</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">username</span><span class="p">:</span> <span class="n">this</span><span class="p">.</span><span class="n">username</span><span class="p">,</span>
+    <span class="n">password</span><span class="p">:</span> <span class="n">this</span><span class="p">.</span><span class="n">password</span>
+  <span class="p">}</span><span class="err">;</span>
+  <span class="k">return</span> <span class="n">this</span><span class="p">.</span><span class="n">model</span><span class="p">(</span><span class="c">&#39;User&#39;).findOne(query, cb);</span>
+<span class="p">}</span><span class="err">;</span>
+
+<span class="n">var</span> <span class="n">User</span> <span class="o">=</span> <span class="n">mongoose</span><span class="p">.</span><span class="n">model</span><span class="p">(</span><span class="c">&#39;User&#39;, userSchema);</span>
+<span class="n">var</span> <span class="n">UserDao</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MongooseDao</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="err">;</span>
+
+<span class="n">module</span><span class="p">.</span><span class="n">exports</span> <span class="o">=</span> <span class="n">UserDao</span><span class="err">;</span>
+</pre></div>
+<p>这就是mongoose里的实例方法，static方法也是一样，你可以玩各种花样</p>
+
+<p>然后控制层</p>
+<div class="highlight"><pre><span class="vg">exports</span><span class="o">.</span><span class="vg">login</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">req</span><span class="p">,</span><span class="w"> </span><span class="vg">res</span><span class="p">,</span><span class="w"> </span><span class="vg">next</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="vg">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">username</span><span class="p">;</span>
+<span class="w">  </span><span class="vg">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">req</span><span class="o">.</span><span class="vg">body</span><span class="o">.</span><span class="vg">password</span><span class="p">;</span>
+
+<span class="w">  </span><span class="vg">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">new</span><span class="w"> </span><span class="vg">User</span><span class="o">.</span><span class="vg">model</span><span class="p">({</span>
+<span class="w">    </span><span class="nl">username:</span><span class="w"> </span><span class="vg">username</span><span class="p">,</span>
+<span class="w">    </span><span class="nl">password:</span><span class="w"> </span><span class="vg">password</span>
+<span class="w">  </span><span class="p">});</span>
+
+<span class="w">  </span><span class="vg">return</span><span class="w"> </span><span class="vg">user</span><span class="o">.</span><span class="vg">is_exist</span><span class="p">(</span><span class="vg">function</span><span class="p">(</span><span class="vg">err</span><span class="p">,</span><span class="w"> </span><span class="vg">usr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="err">。。。</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+<p>是不是很简单？</p>
+
+<h2>视图层</h2>
+
+<p>视图层我们采用express默认的jade，无论各位怎么看，jade都可圈可点</p>
+
+<p>1）extends 方式使用布局
+2）include 复用模型代码
+3）block 复用块代码</p>
+
+<p>以new.jade和edit.jade为例，它们具有代表性</p>
+
+<p>new.jade</p>
+<div class="highlight"><pre><span class="vg">extends</span><span class="w"> </span><span class="o">../</span><span class="vg">layouts</span><span class="o">/</span><span class="vg">layout</span>
+
+<span class="vg">block</span><span class="w"> </span><span class="vg">content</span>
+<span class="w">  </span><span class="vg">h1</span><span class="w"> </span><span class="vg">New</span><span class="w"> </span><span class="vg">user</span>
+
+<span class="w">  </span><span class="vg">include</span><span class="w"> </span><span class="vg">user</span>
+
+<span class="w">  </span><span class="vg">a</span><span class="p">(</span><span class="vg">href</span><span class="o">=</span><span class="c1">&#39;/users&#39;) Back</span>
+</pre></div>
+<p>edit.jade</p>
+<div class="highlight"><pre><span class="vg">extends</span><span class="w"> </span><span class="o">../</span><span class="vg">layouts</span><span class="o">/</span><span class="vg">layout</span>
+
+<span class="vg">block</span><span class="w"> </span><span class="vg">content</span>
+<span class="w">  </span><span class="vg">h1</span><span class="w"> </span><span class="vg">Editing</span><span class="w"> </span><span class="vg">user</span>
+
+<span class="w">  </span><span class="vg">include</span><span class="w"> </span><span class="vg">user</span>
+
+<span class="w">  </span><span class="vg">a</span><span class="p">(</span><span class="vg">href</span><span class="o">=</span><span class="c1">&#39;/users/#{ user._id}&#39;) Show</span>
+<span class="w">  </span><span class="vg">span</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="vg">a</span><span class="p">(</span><span class="vg">href</span><span class="o">=</span><span class="c1">&#39;/users&#39;) Back</span>
+</pre></div>
+<p>首先要说明的是include用法，include类似于partial概念，可以包含一个jade作为一部分</p>
+
+<p>jade里有一个约定，你include了谁，它就要把这个对象传进去</p>
+
+<p>所以user.jade里才是我们复用的重点</p>
+<div class="highlight"><pre><span class="o">-</span><span class="w"> </span><span class="vg">var</span><span class="w"> </span><span class="vg">_action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">user</span><span class="o">.</span><span class="vg">_action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="c1">&#39;edit&#39; ? &#39;#&#39; : &#39;/users/&#39;</span>
+<span class="o">-</span><span class="w"> </span><span class="vg">var</span><span class="w"> </span><span class="vg">_method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">user</span><span class="o">.</span><span class="vg">_action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="c1">&#39;edit&#39; ? &quot;&quot;  : &quot;post&quot;</span>
+<span class="o">-</span><span class="w"> </span><span class="vg">var</span><span class="w"> </span><span class="vg">_type</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="vg">user</span><span class="o">.</span><span class="vg">_action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="c1">&#39;edit&#39; ? &quot;button&quot;  : &quot;submit&quot;</span>
+<span class="o">-</span><span class="w"> </span><span class="vg">var</span><span class="w"> </span><span class="vg">onClick</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="vg">user</span><span class="o">.</span><span class="vg">_action</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="c1">&#39;edit&#39; ?  &quot;click_edit(&#39;user-&quot; + user._action + &quot;-form&#39;,&#39;/users/&quot; + user._id + &quot;/&#39;)&quot; : &quot;&quot;</span>
+<span class="vg">form</span><span class="p">(</span><span class="vg">id</span><span class="o">=</span><span class="c1">&#39;user-#{ user._action}-form&#39;,action=&quot;#{_action}&quot;, method=&quot;#{_method}&quot;,role=&#39;form&#39;)</span>
+<span class="w">  </span><span class="vg">each</span><span class="w"> </span><span class="vg">n</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="p">[</span><span class="c1">&#39;user.name&#39;,&#39;user.password&#39;]</span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="vg">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">eval</span><span class="p">(</span><span class="vg">n</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">div</span><span class="p">(</span><span class="vg">class</span><span class="o">=</span><span class="s2">&quot;field&quot;</span><span class="p">)</span>
+<span class="w">      </span><span class="vg">label</span><span class="w"> </span><span class="err">#</span><span class="p">{</span><span class="vg">n</span><span class="o">.</span><span class="vg">split</span><span class="p">(</span><span class="c1">&#39;.&#39;)[1]} #{m}</span>
+<span class="w">      </span><span class="vg">br</span>
+<span class="w">      </span><span class="vg">input</span><span class="p">(</span><span class="vg">type</span><span class="o">=</span><span class="c1">&#39;text&#39;,name=&quot;#{n.split(&#39;.&#39;)[1]}&quot; ,value=&quot;#{ m == undefined ? &#39;&#39; : m }&quot;)</span>
+
+<span class="w">  </span><span class="vg">div</span><span class="p">(</span><span class="vg">class</span><span class="o">=</span><span class="s2">&quot;actions&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="w">    </span><span class="vg">input</span><span class="p">(</span><span class="vg">type</span><span class="o">=</span><span class="c1">&#39;#{_type}&#39;,value=&#39;Submit&#39;,onClick=&#39;#{onClick}&#39;)</span>
+</pre></div>
+<p>这段是为了复用写的代码，可读性不强，但可以说明include用法，对于代码而言，达到了一定的复用</p>
+
+<p>实际上我们自己jade的适合要尽可能的拆分成小块去复用，当需求变得时候更容易应变。提醒强迫症患者，当心物极必反，不要刻意去强求</p>
+
+<h2>总结一下</h2>
+
+<p>RESTful架构大势所趋，代码写的标准了让人觉得赞</p>
+
+<p>Expressjs下可以写的很规范，可以有做大应用，可以有很好的分层</p>
+
+<p>展示了MVC + Routes的标准rest写法</p>
+
+<p>使用了几个开源代码</p>
+
+<ul>
+<li>mount-routes</li>
+<li>MongooseDao</li>
+</ul>
+
+<p>完成了以上工作，我们还要继续反思一下，既然rest是标准，写法很固定，是不是可以量产呢？答案是可以的，我展示的所有代码是根据一条命令搞定的</p>
+<div class="highlight"><pre><span class="vg">moag</span><span class="w"> </span><span class="vg">user</span><span class="w"> </span><span class="nl">name:</span><span class="vg">string</span><span class="w"> </span><span class="nl">password:</span><span class="vg">string</span>
+</pre></div>
+<p>这就是我目前在写的一个开源项目，待可用的时候会公开的，敬请期待</p>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
